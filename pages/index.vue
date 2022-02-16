@@ -9,8 +9,8 @@
     <div>
      <h1 class="title">
        This is the example app of
-       <a href="https://v3.nuxtjs.org">Nuxt3</a> on
-       <a href="">Layer0</a>.
+       <a target="_blank" href="https://v3.nuxtjs.org">Nuxt3</a> on
+       <a target="_blank" href="">Layer0</a>.
        </h1>
      <span>
        See the
