@@ -8,7 +8,7 @@ In addition to hosting your static assets, Layer0 also includes edge functions w
 
 ## Demo
 
-https://layer0-docs-layer0-nuxt3-example-default.layer0.link
+https://layer0-docs-layer0-nuxt3-example-2-default.layer0-limelight.link
 
 ## Try It Now
 
@@ -92,7 +92,7 @@ To run the Nuxt3 app locally with Layer0, run:
 0 dev
 ```
 
-`0 dev` starts both the Layer0 and Nuxt dev server on port 3001 and 3000 respectively.
+> `0 dev` starts both the Layer0 and Nuxt dev server on port 3001 and 3000 respectively.
 
 Vist [http://localhost:3001](http://localhost:3001) to view the application.
 
