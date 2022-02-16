@@ -18,7 +18,7 @@ https://layer0-docs-layer0-nuxt3-example-2-default.layer0-limelight.link
 
 This framework has a connector developed for Layer0.
 
-> See [Connectors](connectors) for more information.
+> See [Connectors](https://docs.layer0.co/guides/connectors) for more information.
 
 ### `layer0.config.js`
 
