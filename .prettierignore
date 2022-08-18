@@ -6,5 +6,4 @@ node_modules
 .output
 .env
 dist
-# Layer0 generated build directory
 .layer0
