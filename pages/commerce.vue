@@ -6,7 +6,7 @@
       </div>
       <div class="flex flex-col items-start pt-5">
         <h2 class="text-[#FFFFFF75]">Showing {{ finalProducts ? finalProducts.length : '...' }} Results</h2>
-        <div class="mt-5 grid grid-cols-1 sm:grd-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+        <div class="mt-5 grid grid-cols-1 sm:gird-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
           <NuxtLink :key="item.path" :to="`/product/${item.slug}`" v-for="item in finalProducts" class="relative mt-2 border border-white p-1">
             <ClientOnly>
               <prefetch :url="`/l0-api/products/${item.slug}`"><span class="h-0 w-0"></span></prefetch>
