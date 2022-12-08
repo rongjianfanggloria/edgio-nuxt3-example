@@ -1,7 +1,7 @@
-import { Router } from '@layer0/core'
-import { nuxtRoutes } from '@layer0/nuxt-nitro'
+import { Router } from '@edgio/core'
+import { nuxtRoutes } from '@edgio/nuxt-nitro'
 import getPrerenderRequests from './prerenderRequests'
-import { isProductionBuild } from '@layer0/core/environment'
+import { isProductionBuild } from '@edgio/core/environment'
 import { API_CACHE_HANDLER, IMAGE_CACHE_HANDLER, EDGE_CACHE_HANDLER } from './cache'
 
 const router = new Router()
@@ -9,20 +9,15 @@ const router = new Router()
 // Regex to catch multiple hostnames
 // Any deployment will have a L0 permalink
 // Don't allow Google bot to crawl it, read more on:
-// https://docs.layer0.co/guides/cookbook#blocking-search-engine-crawlers
+// https://docs.edg.io/guides/cookbook#blocking-search-engine-crawlers
 router.noIndexPermalink()
 
 // Pre-render the static home page
 // By pre-rendering, once the project is deployed
 // the set of links are visited to warm the cache
 // for future visits (expected to be the first view for real users)
-// More on static prerendering: https://docs.layer0.co/guides/static_prerendering
+// More on static prerendering: https://docs.edg.io/guides/static_prerendering
 router.prerender(getPrerenderRequests)
-
-// Serve the old Layer0 predefined routes by the latest prefix
-router.match('/__xdn__/:path*', ({ redirect }) => {
-  redirect('/__layer0__/:path*', 301)
-})
 
 // API (Any backend) caching
 router.match('/l0-api/:path*', API_CACHE_HANDLER)

@@ -1,4 +1,4 @@
-import install from '@layer0/devtools/install'
+import install from '@edgio/devtools/install'
 
 export default defineNuxtPlugin(() => {
   install()

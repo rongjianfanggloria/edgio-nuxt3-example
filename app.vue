@@ -8,11 +8,11 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import Layer0RUM from './layer0/rum'
+import EdgioRUM from './edgio/rum'
 
 onMounted(() => {
   // Monitor real user as it gets mounted
-  Layer0RUM('2e2f71ee-47a2-4789-9208-825beee15863')
+  EdgioRUM('2e2f71ee-47a2-4789-9208-825beee15863')
 })
 </script>
 
