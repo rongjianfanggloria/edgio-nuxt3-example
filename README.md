@@ -4,7 +4,7 @@ A demo deployment of Nuxt 3 app to Edgio.
 
 ## Demo
 
-https://edgio-community-layer0-nuxt3-example-default.layer0-limelight.link/
+https://layer0-docs-layer0-nuxt3-example-default.layer0-limelight.link
 
 ## Try It Now
 
