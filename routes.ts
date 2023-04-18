@@ -20,14 +20,14 @@ export default new Router()
     //     }
     // })
     .match("/", ({ cache }) => { cache({ edge: { maxAgeSeconds: 60 * 60 * 24, staleWhileRevalidateSeconds: 60 * 60 }}) })
-    .match("/",  {
-        'headers': {
-            set_response_header: {
-                "x-gloria-cookie": "%{cookie_<COOKIE>}",
-                "x-request-uri": "%{request_uri}"
+    // .match("/",  {
+    //     'headers': {
+    //         set_response_header: {
+    //             "x-gloria-cookie": "%{cookie_<COOKIE>}",
+    //             "x-request-uri": "%{request_uri}"
 
-            }
-        }})
+    //         }
+    //     }})
     .use(nuxtRoutes);
 
 
